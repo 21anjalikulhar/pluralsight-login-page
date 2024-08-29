@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(240, 180, 101);
+    display: flex;
+}
+.left-part{
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(11, 16, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-part img{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form{
+    height:auto;
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form label{
+    color: white;
+    /* margin-right: 170px; */
+    text-align: center;
+}
+form #pass{
+    /* margin-right: 270px; */
+    text-align: center;
+}
+form input{
+    height: 40px;
+    width: 60%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+form button{
+    height: 35px;
+    width: 60%;
+    color: white;
+    background-color: rgb(7, 65, 146);
+    border:none;
+    border-radius: 3px;   
+    margin-bottom: 20px; 
+}
+form #btn{
+    background-color: grey;
+    margin-top: 20px;
+}
+form hr{
+    height: 2px;
+    width: 60%;
+    background-color: white;
+}
+
+form a{
+    text-decoration: none;
+    color:rgb(7, 65, 146) ;
+    line-height: 30px;
+}
+form a:hover{
+    text-decoration: underline;
+}
+form hr{
+    margin-top: 20px;
+}
+.right-part{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./login-bg\ \(1\).jpg);
+    background-position: center;
+    background-size: cover ;
+}
+.right-part h1{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.right-part button{
+    height: 40px;
+    width: 40%;
+    margin-top: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.last-part{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.last-part a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.last-part p{
+    margin-bottom: 20px;
+}
+.last-part span a:hover{
+    color:rgb(7, 65, 146) ;
+}
+/* Responsive code */
+@media(max-width:912px) {
+
+    .main-container{
+        height: auto;
+        width: 100%;
+        display: flex;
+        
+    }
+    .left-part{
+        height: 100vh;
+        width: 50%;
+    }
+    .right-part{
+        height: 100vh;
+        width: 50%;
+    }
+    .left-part form label{
+        /* margin-right: 100px; */
+        text-align: center;
+
+    }
+    .left-part form #pass{
+        /* margin-right:200px; */
+        text-align: center;
+    }
+    .left-part form a{
+        text-align: center;
+    }
+    .last-part p{
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+    .main-container{
+        height: auto;
+        width: 100%;
+    }
+    
+    .left-part{
+        height: auto;
+        width: 100%;
+    }
+    .left-part form label{
+        /* margin-right: 60px; */
+        text-align: center;
+    }
+    .left-part form #pass{
+        /* margin-right: 160px; */
+        text-align: center;
+    }
+    .right-part{
+        height: 100vh;
+        width: 100%;
+}
+.right-part h1{
+    font-size: 30px
+}
+
+.left-part p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.left-part form a{
+    text-align: center;
+}
+}
+@media (max-width:480px) {
+    .main-container{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    .left-part{
+        height: auto;
+        width: 100%;
+    }
+    .right-part{
+        height: 100vh;
+        width: 100%;
+    }
+    .left-part label{
+        /* margin-right: 110px; */
+        text-align: center;
+    }
+    .left-part #pass{
+        /* margin-right:210px; */
+        text-align: center;
+    }
+    
+}
